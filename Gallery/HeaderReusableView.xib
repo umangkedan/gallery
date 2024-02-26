@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="U6b-Vx-4bR" customClass="HeaderReusableView" customModule="Gallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lB-nC-7Vl">
+                    <rect key="frame" x="80" y="15" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="i4F-di-aa3"/>
+                        <constraint firstAttribute="height" constant="21" id="md2-QO-1wB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jix-y6-YfD">
+                    <rect key="frame" x="250" y="10" width="65" height="34"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="#"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="4lB-nC-7Vl" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="80" id="Axp-re-bZl"/>
+                <constraint firstItem="Jix-y6-YfD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="GPM-nm-wXE"/>
+                <constraint firstItem="4lB-nC-7Vl" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="15" id="KDe-Q2-N2G"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Jix-y6-YfD" secondAttribute="trailing" constant="5" id="NFM-YR-VMD"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Jix-y6-YfD" secondAttribute="bottom" constant="6" id="Y4u-bE-4Ah"/>
+                <constraint firstItem="Jix-y6-YfD" firstAttribute="leading" secondItem="4lB-nC-7Vl" secondAttribute="trailing" constant="70" id="zQm-Cm-Bai"/>
+            </constraints>
+            <connections>
+                <outlet property="gridButton" destination="Jix-y6-YfD" id="cBk-cH-yvv"/>
+                <outlet property="nameLabelHeader" destination="4lB-nC-7Vl" id="Vey-39-oqT"/>
+            </connections>
+            <point key="canvasLocation" x="99" y="-1"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
